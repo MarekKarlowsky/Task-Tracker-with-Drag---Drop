@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Loop';
+}
+
+.interface{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ccccff;
+    display: flex;
+    justify-content:stretch;
+}
+
+.task_creation_bar{
+    width: 300px;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 3px solid white;
+}
+
+.task_creation_bar h3{
+    padding: 10px;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.task_creation_bar input{
+    font-size: 20px;
+    text-indent: 25%
+}
+
+.task_creation_bar button{
+    font-size: 25px;    
+}
+
+.task_space{
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#createBtn{
+    margin-top: 20px;
+}
+
+.task{
+    width: 200px;
+    height: 50px;
+    border: 3px solid white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.taskbar{
+    width: 250px;
+    height: 90%;
+    border: 3px solid white;
+    justify-items: center;
+    background-color: #666699;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.taskbar h3{
+    text-align: center;
+    color: white;
+    font-size: 26px;
+}
+
+
+.hold{
+    background-color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+.hovered{
+    border: 3px solid #80ffff;
+}
+
+.to_be_done{
+    border: 3px solid #ffff80;
+}
+
+.in_progress{
+    border: 3px solid #cccc00;
+}
+
+.done{
+    border: 3px solid #4d4d00;
+}
+
+
+@media only screen and (max-width: 600px){
+    .taskbar{
+        width: 175px;
+    }
+    .task{
+        width: 75px;
+        font-size: 10px;
+    }
+    .deletetask{
+        margin-left: 30px;
+    }
+}
+
+.wrapper{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
